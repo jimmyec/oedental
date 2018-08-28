@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="periodontalWidget">
+        <div style="overflow:auto;">
+            <!-- <p>"hola mundo"</p> -->
+            <!-- <t t-foreach="widget.products" t-as="product">
+                <span class="oe_products_item"
+                      t-attf-style="background-color: {{ widget.color }};">
+                    <t t-esc="product"/>
+                </span>
+                <br/>
+            </t> -->
+            <!-- <img src="../../img/cuadrado.png"> -->
+            <table id="tabla-titulo">
+                <span>Periodontograma</span>
+                <!-- <img src="/img/cuadrado.png"> -->
+            </table>
+            
+            <table id="separador">
+            <tr>
+                <td>SUPERIOR</td>
+            </tr>
+            </table>
+            
+            <div id="wrapper">
+
+                <table id="tabla-superior">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table id="tabla-1">
+                                    <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td class="borde"><div id="d18">1.8</div></td>
+                                        <td class="borde"><div id="d17">1.7</div></td>
+                                        <td class="borde"><div id="d16">1.6</div></td>
+                                        <td class="borde"><div id="d15">1.5</div></td>
+                                        <td class="borde"><div id="d14">1.4</div></td>
+                                        <td class="borde"><div id="d13">1.3</div></td>
+                                        <td class="borde"><div id="d12">1.2</div></td>
+                                        <td class="borde"><div id="d11">1.1</div></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="titulo">Implante</td>
+                                        <td class="borde"><div id="i18"></div></td>
+                                        <td class="borde"><div id="i17"></div></td>
+                                        <td class="borde"><div id="i16"></div></td>
+                                        <td class="borde"><div id="i15"></div></td>
+                                        <td class="borde"><div id="i14"></div></td>
+                                        <td class="borde"><div id="i13"></div></td>
+                                        <td class="borde"><div id="i12"></div></td>
+                                        <td class="borde"><div id="i11"></div></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="titulo">Movilidad</td>
+                                        <td class="borde"><input type="text" id="m18" name="m18" value="0" tabindex="1" /></td>
+                                        <td class="borde"><input type="text" id="m17" name="m17" value="0" tabindex="2" /></td>
+                                        <td class="borde"><input type="text" id="m16" name="m16" value="0" tabindex="3" /></td>
+                                        <td class="borde"><input type="text" id="m15" name="m15" value="0" tabindex="4" /></td>
+                                        <td class="borde"><input type="text" id="m14" name="m14" value="0" tabindex="5" /></td>
+                                        <td class="borde"><input type="text" id="m13" name="m13" value="0" tabindex="6" /></td>
+                                        <td class="borde"><input type="text" id="m12" name="m12" value="0" tabindex="7" /></td>
+                                        <td class="borde"><input type="text" id="m11" name="m11" value="0" tabindex="8" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Pronóstico individual</td>
+                                        <td class="borde"><input type="text" id="pi18" name="pi18" value="0" tabindex="17" /></td>
+                                        <td class="borde"><input type="text" id="pi17" name="pi17" value="0" tabindex="18" /></td>
+                                        <td class="borde"><input type="text" id="pi16" name="pi16" value="0" tabindex="19" /></td>
+                                        <td class="borde"><input type="text" id="pi15" name="pi15" value="0" tabindex="20" /></td>
+                                        <td class="borde"><input type="text" id="pi14" name="pi14" value="0" tabindex="21" /></td>
+                                        <td class="borde"><input type="text" id="pi13" name="pi13" value="0" tabindex="22" /></td>
+                                        <td class="borde"><input type="text" id="pi12" name="pi12" value="0" tabindex="23" /></td>
+                                        <td class="borde"><input type="text" id="pi11" name="pi11" value="0" tabindex="24" /></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="titulo">Furca</td>
+                                        <td class="borde"><div id="f18"></div></td>
+                                        <td class="borde"><div id="f17"></div></td>
+                                        <td class="borde"><div id="f16"></div></td>
+                                        <td class="borde"></td>
+                                        <td class="borde"></td>
+                                        <td class="borde"></td>
+                                        <td class="borde"></td>
+                                        <td class="borde"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="titulo">Sangrado / Supuración</td>
+                                        <td class="borde"><div id="s18-a"></div><div id="s18-b"></div><div id="s18-c"></div></td>
+                                        <td class="borde"><div id="s17-a"></div><div id="s17-b"></div><div id="s17-c"></div></td>
+                                        <td class="borde"><div id="s16-a"></div><div id="s16-b"></div><div id="s16-c"></div></td>
+                                        <td class="borde"><div id="s15-a"></div><div id="s15-b"></div><div id="s15-c"></div></td>
+                                        <td class="borde"><div id="s14-a"></div><div id="s14-b"></div><div id="s14-c"></div></td>
+                                        <td class="borde"><div id="s13-a"></div><div id="s13-b"></div><div id="s13-c"></div></td>
+                                        <td class="borde"><div id="s12-a"></div><div id="s12-b"></div><div id="s12-c"></div></td>
+                                        <td class="borde"><div id="s11-a"></div><div id="s11-b"></div><div id="s11-c"></div></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="titulo">Placa</td>
+                                        <td class="borde"><div id="p18-a"></div><div id="p18-b"></div><div id="p18-c"></div></td>
+                                        <td class="borde"><div id="p17-a"></div><div id="p17-b"></div><div id="p17-c"></div></td>
+                                        <td class="borde"><div id="p16-a"></div><div id="p16-b"></div><div id="p16-c"></div></td>
+                                        <td class="borde"><div id="p15-a"></div><div id="p15-b"></div><div id="p15-c"></div></td>
+                                        <td class="borde"><div id="p14-a"></div><div id="p14-b"></div><div id="p14-c"></div></td>
+                                        <td class="borde"><div id="p13-a"></div><div id="p13-b"></div><div id="p13-c"></div></td>
+                                        <td class="borde"><div id="p12-a"></div><div id="p12-b"></div><div id="p12-c"></div></td>
+                                        <td class="borde"><div id="p11-a"></div><div id="p11-b"></div><div id="p11-c"></div></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="titulo">Anchura encía</td>
+                                        <td class="borde"><input type="text" id="ae18" name="ae18" value="" tabindex="33" /></td>
+                                        <td class="borde"><input type="text" id="ae17" name="ae17" value="" tabindex="34" /></td>
+                                        <td class="borde"><input type="text" id="ae16" name="ae16" value="" tabindex="35" /></td>
+                                        <td class="borde"><input type="text" id="ae15" name="ae15" value="" tabindex="36" /></td>
+                                        <td class="borde"><input type="text" id="ae14" name="ae14" value="" tabindex="37" /></td>
+                                        <td class="borde"><input type="text" id="ae13" name="ae13" value="" tabindex="38" /></td>
+                                        <td class="borde"><input type="text" id="ae12" name="ae12" value="" tabindex="39" /></td>
+                                        <td class="borde"><input type="text" id="ae11" name="ae11" value="" tabindex="40" /></td>
+                                    </tr>
+                                    <tr>    
+                                        <td class="titulo">Margen gingival</td>
+                                        <td class="borde">
+                                            <input type="text" id="mg18-a" name="mg18-a" value="0" tabindex="49" />
+                                            <input type="text" id="mg18-b" name="mg18-b" value="0" tabindex="50" />
+                                            <input type="text" id="mg18-c" name="mg18-c" value="0" tabindex="51" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="mg17-a" name="mg17-a" value="0" tabindex="52" />
+                                            <input type="text" id="mg17-b" name="mg17-b" value="0" tabindex="53" />
+                                            <input type="text" id="mg17-c" name="mg17-c" value="0" tabindex="54" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="mg16-a" name="mg16-a" value="0" tabindex="55" />
+                                            <input type="text" id="mg16-b" name="mg16-b" value="0" tabindex="56" />
+                                            <input type="text" id="mg16-c" name="mg16-c" value="0" tabindex="57" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="mg15-a" name="mg15-a" value="0" tabindex="57" />
+                                            <input type="text" id="mg15-b" name="mg15-b" value="0" tabindex="59" />
+                                            <input type="text" id="mg15-c" name="mg15-c" value="0" tabindex="60" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="mg14-a" name="mg14-a" value="0" tabindex="61" />
+                                            <input type="text" id="mg14-b" name="mg14-b" value="0" tabindex="62" />
+                                            <input type="text" id="mg14-c" name="mg14-c" value="0" tabindex="63" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="mg13-a" name="mg13-a" value="0" tabindex="64" />
+                                            <input type="text" id="mg13-b" name="mg13-b" value="0" tabindex="65" />
+                                            <input type="text" id="mg13-c" name="mg13-c" value="0" tabindex="66" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="mg12-a" name="mg12-a" value="0" tabindex="67" />
+                                            <input type="text" id="mg12-b" name="mg12-b" value="0" tabindex="68" />
+                                            <input type="text" id="mg12-c" name="mg12-c" value="0" tabindex="69" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="mg11-a" name="mg11-a" value="0" tabindex="70" />
+                                            <input type="text" id="mg11-b" name="mg11-b" value="0" tabindex="71" />
+                                            <input type="text" id="mg11-c" name="mg11-c" value="0" tabindex="72" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Profundidad de sondaje</td>
+                                        <td class="borde">
+                                            <input type="text" id="ps18-a" name="ps18-a" value="0" tabindex="97" />
+                                            <input type="text" id="ps18-b" name="ps18-b" value="0" tabindex="98" />
+                                            <input type="text" id="ps18-c" name="ps18-c" value="0" tabindex="99" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="ps17-a" name="ps17-a" value="0" tabindex="100" />
+                                            <input type="text" id="ps17-b" name="ps17-b" value="0" tabindex="101" />
+                                            <input type="text" id="ps17-c" name="ps17-c" value="0" tabindex="102" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="ps16-a" name="ps16-a" value="0" tabindex="103" />
+                                            <input type="text" id="ps16-b" name="ps16-b" value="0" tabindex="104" />
+                                            <input type="text" id="ps16-c" name="ps16-c" value="0" tabindex="105" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="ps15-a" name="ps15-a" value="0" tabindex="106" />
+                                            <input type="text" id="ps15-b" name="ps15-b" value="0" tabindex="107" />
+                                            <input type="text" id="ps15-c" name="ps15-c" value="0" tabindex="108" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="ps14-a" name="ps14-a" value="0" tabindex="109" />
+                                            <input type="text" id="ps14-b" name="ps14-b" value="0" tabindex="110" />
+                                            <input type="text" id="ps14-c" name="ps14-c" value="0" tabindex="111" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="ps13-a" name="ps13-a" value="0" tabindex="112" />
+                                            <input type="text" id="ps13-b" name="ps13-b" value="0" tabindex="113" />
+                                            <input type="text" id="ps13-c" name="ps13-c" value="0" tabindex="114" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="ps12-a" name="ps12-a" value="0" tabindex="115" />
+                                            <input type="text" id="ps12-b" name="ps12-b" value="0" tabindex="116" />
+                                            <input type="text" id="ps12-c" name="ps12-c" value="0" tabindex="117" />
+                                        </td>
+                                        <td class="borde">
+                                            <input type="text" id="ps11-a" name="ps11-a" value="0" tabindex="118" />
+                                            <input type="text" id="ps11-b" name="ps11-b" value="0" tabindex="119" />
+                                            <input type="text" id="ps11-c" name="ps11-c" value="0" tabindex="120" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Vestibular</td>
+                                        <td class="noborde">
+                                            <div id="lineas-gr"></div>
+                                            <div id="visualization18a">
+                                            </div>
+                                            <div id="diente18-a">
+                                                <div id="furca18"></div>
+                                            </div>
+                                        </td>
+                                        <td class="noborde">
+                                            <div id="visualization17a"></div>
+                                            <div id="diente17-a">
+                                                <div id="furca17"></div>
+                                            </div>
+                                        </td>
+                                        <td class="noborde">
+                                            <div id="visualization16a"></div>
+                                            <div id="diente16-a">
+                                                <div id="furca16"></div>
+                                            </div>
+                                        </td>
+                                        <td class="noborde">
+                                            <div id="visualization15a"></div>
+                                            <div id="diente15-a"></div>
+                                        </td>
+                                        <td class="noborde">
+                                            <div id="visualization14a"></div>
+                                            <div id="diente14-a"></div>
+                                        </td>
+                                        <td class="noborde">
+                                            <div id="visualization13a"></div>
+                                            <div id="diente13-a"></div>
+                                        </td>
+                                        <td class="noborde">
+                                            <div id="visualization12a"></div>
+                                            <div id="diente12-a"></div>
+                                        </td>
+                                        <td class="noborde">
+                                            <div id="visualization11a"></div>
+                                            <div id="diente11-a"></div></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+
+                            <td>
+                                <table id="tabla-2">
+                                    <tbody>
+                                        <tr>
+                                            <td class="borde"><div id="d21">2.1</div></td>
+                                            <td class="borde"><div id="d22">2.2</div></td>
+                                            <td class="borde"><div id="d23">2.3</div></td>
+                                            <td class="borde"><div id="d24">2.4</div></td>
+                                            <td class="borde"><div id="d25">2.5</div></td>
+                                            <td class="borde"><div id="d26">2.6</div></td>
+                                            <td class="borde"><div id="d27">2.7</div></td>
+                                            <td class="borde"><div id="d28">2.8</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="borde"><div id="i21"></div></td>
+                                            <td class="borde"><div id="i22"></div></td>
+                                            <td class="borde"><div id="i23"></div></td>
+                                            <td class="borde"><div id="i24"></div></td>
+                                            <td class="borde"><div id="i25"></div></td>
+                                            <td class="borde"><div id="i26"></div></td>
+                                            <td class="borde"><div id="i27"></div></td>
+                                            <td class="borde"><div id="i28"></div></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="borde"><input type="text" id="m21" name="m21" value="0" tabindex="9" /></td>
+                                            <td class="borde"><input type="text" id="m22" name="m22" value="0" tabindex="10" /></td>
+                                            <td class="borde"><input type="text" id="m23" name="m23" value="0" tabindex="11" /></td>
+                                            <td class="borde"><input type="text" id="m24" name="m24" value="0" tabindex="12" /></td>
+                                            <td class="borde"><input type="text" id="m25" name="m25" value="0" tabindex="13" /></td>
+                                            <td class="borde"><input type="text" id="m26" name="m26" value="0" tabindex="14" /></td>
+                                            <td class="borde"><input type="text" id="m27" name="m27" value="0" tabindex="15" /></td>
+                                            <td class="borde"><input type="text" id="m28" name="m28" value="0" tabindex="16" /></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="borde"><input type="text" id="pi21" name="pi21" tabindex="25" /></td>
+                                            <td class="borde"><input type="text" id="pi22" name="pi22" tabindex="26" /></td>
+                                            <td class="borde"><input type="text" id="pi23" name="pi23" tabindex="27" /></td>
+                                            <td class="borde"><input type="text" id="pi24" name="pi24" tabindex="28" /></td>
+                                            <td class="borde"><input type="text" id="pi25" name="pi25" tabindex="29" /></td>
+                                            <td class="borde"><input type="text" id="pi26" name="pi26" tabindex="30" /></td>
+                                            <td class="borde"><input type="text" id="pi27" name="pi27" tabindex="31" /></td>
+                                            <td class="borde"><input type="text" id="pi28" name="pi28" tabindex="32" /></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="borde"></td>
+                                            <td class="borde"></td>
+                                            <td class="borde"></td>
+                                            <td class="borde"></td>
+                                            <td class="borde"></td>
+                                            <td class="borde"><div id="f26"></div></td>
+                                            <td class="borde"><div id="f27"></div></td>
+                                            <td class="borde"><div id="f28"></div></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="borde"><div id="s21-a"></div><div id="s21-b"></div><div id="s21-c"></div></td>
+                                            <td class="borde"><div id="s22-a"></div><div id="s22-b"></div><div id="s22-c"></div></td>
+                                            <td class="borde"><div id="s23-a"></div><div id="s23-b"></div><div id="s23-c"></div></td>
+                                            <td class="borde"><div id="s24-a"></div><div id="s24-b"></div><div id="s24-c"></div></td>
+                                            <td class="borde"><div id="s25-a"></div><div id="s25-b"></div><div id="s25-c"></div></td>
+                                            <td class="borde"><div id="s26-a"></div><div id="s26-b"></div><div id="s26-c"></div></td>
+                                            <td class="borde"><div id="s27-a"></div><div id="s27-b"></div><div id="s27-c"></div></td>
+                                            <td class="borde"><div id="s28-a"></div><div id="s28-b"></div><div id="s28-c"></div></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="borde"><div id="p21-a"></div><div id="p21-b"></div><div id="p21-c"></div></td>
+                                            <td class="borde"><div id="p22-a"></div><div id="p22-b"></div><div id="p22-c"></div></td>
+                                            <td class="borde"><div id="p23-a"></div><div id="p23-b"></div><div id="p23-c"></div></td>
+                                            <td class="borde"><div id="p24-a"></div><div id="p24-b"></div><div id="p24-c"></div></td>
+                                            <td class="borde"><div id="p25-a"></div><div id="p25-b"></div><div id="p25-c"></div></td>
+                                            <td class="borde"><div id="p26-a"></div><div id="p26-b"></div><div id="p26-c"></div></td>
+                                            <td class="borde"><div id="p27-a"></div><div id="p27-b"></div><div id="p27-c"></div></td>
+                                            <td class="borde"><div id="p28-a"></div><div id="p28-b"></div><div id="p28-c"></div></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="borde"><input type="text" id="ae21" name="ae21" value="" tabindex="41" /></td>
+                                            <td class="borde"><input type="text" id="ae22" name="ae22" value="" tabindex="42" /></td>
+                                            <td class="borde"><input type="text" id="ae23" name="ae23" value="" tabindex="43" /></td>
+                                            <td class="borde"><input type="text" id="ae24" name="ae24" value="" tabindex="44" /></td>
+                                            <td class="borde"><input type="text" id="ae25" name="ae25" value="" tabindex="45" /></td>
+                                            <td class="borde"><input type="text" id="ae26" name="ae26" value="" tabindex="46" /></td>
+                                            <td class="borde"><input type="text" id="ae27" name="ae27" value="" tabindex="47" /></td>
+                                            <td class="borde"><input type="text" id="ae28" name="ae28" value="" tabindex="48" /></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="borde">
+                                                <input type="text" id="mg21-a" name="mg21-a" value="0" tabindex="73" />
+                                                <input type="text" id="mg21-b" name="mg21-b" value="0" tabindex="74" />
+                                                <input type="text" id="mg21-c" name="mg21-c" value="0" tabindex="75" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="mg22-a" name="mg22-a" value="0" tabindex="76" />
+                                                <input type="text" id="mg22-b" name="mg22-b" value="0" tabindex="77" />
+                                                <input type="text" id="mg22-c" name="mg22-c" value="0" tabindex="78" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="mg23-a" name="mg23-a" value="0" tabindex="79" />
+                                                <input type="text" id="mg23-b" name="mg23-b" value="0" tabindex="80" />
+                                                <input type="text" id="mg23-c" name="mg23-c" value="0" tabindex="81" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="mg24-a" name="mg24-a" value="0" tabindex="82" />
+                                                <input type="text" id="mg24-b" name="mg24-b" value="0" tabindex="83" />
+                                                <input type="text" id="mg24-c" name="mg24-c" value="0" tabindex="84" />
+                                            </td> 
+                                            <td class="borde">
+                                                <input type="text" id="mg25-a" name="mg25-a" value="0" tabindex="85" />
+                                                <input type="text" id="mg25-b" name="mg25-b" value="0" tabindex="86" />
+                                                <input type="text" id="mg25-c" name="mg25-c" value="0" tabindex="87" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="mg26-a" name="mg26-a" value="0" tabindex="88" />
+                                                <input type="text" id="mg26-b" name="mg26-b" value="0" tabindex="89" />
+                                                <input type="text" id="mg26-c" name="mg26-c" value="0" tabindex="90" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="mg27-a" name="mg27-a" value="0" tabindex="91" />
+                                                <input type="text" id="mg27-b" name="mg27-b" value="0" tabindex="92" />
+                                                <input type="text" id="mg27-c" name="mg27-c" value="0" tabindex="93" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="mg28-a" name="mg28-a" value="0" tabindex="94" />
+                                                <input type="text" id="mg28-b" name="mg28-b" value="0" tabindex="95" />
+                                                <input type="text" id="mg28-c" name="mg28-c" value="0" tabindex="96" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="borde">
+                                                <input type="text" id="ps21-a" name="ps21-a" value="0" tabindex="121" />
+                                                <input type="text" id="ps21-b" name="ps21-b" value="0" tabindex="122" />
+                                                <input type="text" id="ps21-c" name="ps21-c" value="0" tabindex="123" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="ps22-a" name="ps22-a" value="0" tabindex="124" />
+                                                <input type="text" id="ps22-b" name="ps22-b" value="0" tabindex="125" />
+                                                <input type="text" id="ps22-c" name="ps22-c" value="0" tabindex="126" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="ps23-a" name="ps23-a" value="0" tabindex="127" />
+                                                <input type="text" id="ps23-b" name="ps23-b" value="0" tabindex="128" />
+                                                <input type="text" id="ps23-c" name="ps23-c" value="0" tabindex="129" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="ps24-a" name="ps24-a" value="0" tabindex="130" />
+                                                <input type="text" id="ps24-b" name="ps24-b" value="0" tabindex="131" />
+                                                <input type="text" id="ps24-c" name="ps24-c" value="0" tabindex="132" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="ps25-a" name="ps25-a" value="0" tabindex="133" />
+                                                <input type="text" id="ps25-b" name="ps25-b" value="0" tabindex="134" />
+                                                <input type="text" id="ps25-c" name="ps25-c" value="0" tabindex="135" />
+                                            </td> 
+                                            <td class="borde">
+                                                <input type="text" id="ps26-a" name="ps26-a" value="0" tabindex="136" />
+                                                <input type="text" id="ps26-b" name="ps26-b" value="0" tabindex="137" />
+                                                <input type="text" id="ps26-c" name="ps26-c" value="0" tabindex="138" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="ps27-a" name="ps27-a" value="0" tabindex="139" />
+                                                <input type="text" id="ps27-b" name="ps27-b" value="0" tabindex="140" />
+                                                <input type="text" id="ps27-c" name="ps27-c" value="0" tabindex="141" />
+                                            </td>
+                                            <td class="borde">
+                                                <input type="text" id="ps28-a" name="ps28-a" value="0" tabindex="142" />
+                                                <input type="text" id="ps28-b" name="ps28-b" value="0" tabindex="143" />
+                                                <input type="text" id="ps28-c" name="ps28-c" value="0" tabindex="144" />
+                                            </td>
+                                        </tr>
+
+                                         <tr>
+                                            <td class="noborde">
+                                                <div id="lineas-gr"></div>
+                                                <div id="visualization21a"></div>
+                                                <div id="diente21-a"></div>
+                                            </td>
+                                            <td class="noborde">
+                                                <div id="diente22-a"></div>
+                                            </td>
+                                            <td class="noborde">
+                                                <div id="visualization23a"></div>
+                                                <div id="diente23-a"></div>
+                                            </td>
+                                            <td class="noborde">
+                                                <div id="visualization24a"></div>
+                                                <div id="diente24-a"></div>
+                                            </td>
+                                            <td class="noborde">
+                                                <div id="visualization25a"></div>
+                                                <div id="diente25-a"></div>
+                                            </td>
+                                            <td class="noborde">
+                                                <div id="visualization26a"></div>
+                                                <div id="diente26-a"></div>
+                                                    <div id="furca26"></div>
+                                             </td>
+                                            <td class="noborde">
+                                                <div id="visualization27a" ></div>
+                                                <div id="diente27-a">
+                                                    <div id="furca27"></div>
+                                                </div>
+                                            </td>
+                                            <td class="noborde">
+                                                <div id="visualization28a" ></div>
+                                                <div id="diente28-a">
+                                                    <div id="furca28"></div>
+                                                </div>
+                                            </td> 
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </t>
+</templates>

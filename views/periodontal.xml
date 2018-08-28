@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="periodontal_assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/oedental/static/src/css/periodontal.css"/>
+<!--                 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"/>
+                <script type="text/javascript" src="http://www.google.com/jsapi" charset="utf-8"/> -->
+                <script type="text/javascript" src="/oedental/static/src/js/periodontal.js"/>
+            </xpath>
+        </template>
+
+        <record id="pediodontal_view_form" model="ir.ui.view">
+                <field name="name">Periodontal Form</field>
+                <field name="model">periodontal</field>
+                <field name="arch" type="xml">
+                    <form string="Periodontal">
+                        <header>
+                        </header>
+                        <sheet>
+                            <notebook>
+                                <page string="Periodontal" name="periodontal">
+                                    <field name="d11" invisible="1"/>
+                                    <field name="d12" invisible="1"/>
+                                    <field name="d13" invisible="1"/>
+                                    <field name="d14" invisible="1"/>
+                                    <field name="d15" invisible="1"/>
+                                    <field name="d16" invisible="1"/>
+                                    <field name="d17" invisible="1"/>
+                                    <field name="d18" invisible="1"/>
+                                    <!-- <widget type="periodontal"></widget> -->
+
+                                </page>
+                            </notebook>
+                        </sheet>
+                    </form>
+            </field>
+        </record>
+
+
+        <record id="action_periodontal_" model="ir.actions.act_window">
+            <field name="name">Periodontal Form</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">periodontal</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+
+
+        <menuitem id="main_dental_menu" name="Dental" />
+
+        <menuitem id="dental_menu" 
+            name="Dental"
+            parent="main_dental_menu" />
+
+        <record id="action_home_page" model="ir.actions.client">
+            <field name="name">periodontal</field>
+            <field name="tag">periodontal</field>
+        </record>
+
+        <menuitem id="home_page_dental_menu" 
+            name="Home Page" 
+            parent="dental_menu"
+            action="action_home_page"/>
+
+        <menuitem id="periodontal_menu" 
+            name="Periodontal" 
+            parent="dental_menu"
+            action="action_periodontal_"/>
+
+
+    </data>
+</odoo>
